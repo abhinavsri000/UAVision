@@ -31,20 +31,20 @@ export interface NavData {
 
 export const navItems: NavData[] = [
   {
-    name: 'Dashboard',
+    name: 'UAVision',
     url: '/dashboard',
-    icon: 'icon-speedometer',
-    badge: {
+    icon: 'icon-cursor',
+    /* badge: {
       variant: 'info',
       text: 'NEW'
-    }
+    } */
   },
   {
     title: true,
     name: 'Theme'
   },
   {
-    name: 'Colors',
+    name: 'Abhinav',
     url: '/theme/colors',
     icon: 'icon-drop'
   },
@@ -256,7 +256,7 @@ export const navItems: NavData[] = [
     },
     attributes: { disabled: true },
   },
-  {
+  /* {
     name: 'Download CoreUI',
     url: 'http://coreui.io/angular/',
     icon: 'icon-cloud-download',
@@ -270,5 +270,5 @@ export const navItems: NavData[] = [
     icon: 'icon-layers',
     variant: 'danger',
     attributes: { target: '_blank', rel: 'noopener' }
-  }
+  } */
 ];
