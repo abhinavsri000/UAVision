@@ -1,4 +1,4 @@
-<app-header
+<!-- <app-header
   [navbarBrandRouterLink]="['/dashboard']"
   [fixed]="true"
   [navbarBrandFull]="{src: 'assets/img/brand/logo.svg', width: 89, height: 25, alt: 'CoreUI Logo'}"
@@ -47,12 +47,12 @@
       </div>
     </li>
   </ul>
-</app-header>
+</app-header> -->
 <div class="app-body">
   <app-sidebar [fixed]="true" [display]="'lg'">
     <app-sidebar-nav [navItems]="navItems" [perfectScrollbar] [disabled]="sidebarMinimized"></app-sidebar-nav>
-    <app-sidebar-minimizer></app-sidebar-minimizer>
-  </app-sidebar>
+  <!--   <app-sidebar-minimizer></app-sidebar-minimizer>
+   --></app-sidebar>
   <!-- Main content -->
   <main class="main">
     <!-- Breadcrumb -->
@@ -83,7 +83,7 @@
       <router-outlet></router-outlet>
     </div><!-- /.container-fluid -->
   </main>
-  <app-aside [fixed]="true" [display]="false">
+  <!-- <app-aside [fixed]="true" [display]="false">
     <tabset>
       <tab>
         <ng-template tabHeading><i class="icon-list"></i></ng-template>
@@ -334,7 +334,7 @@
       </tab>
     </tabset>
   </app-aside>
-</div>
+ --></div>
 <app-footer>
   <span><a href="https://coreui.io">CoreUI</a> &copy; 2018 creativeLabs.</span>
   <span class="ml-auto">Powered by <a href="https://coreui.io/angular">CoreUI for Angular</a></span>
