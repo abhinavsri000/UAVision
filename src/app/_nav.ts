@@ -41,26 +41,26 @@ export const navItems: NavData[] = [
   },
   {
     title: true,
-    name: 'Theme'
+    name: 'Dashboard'
   },
   {
-    name: 'Abhinav',
+    name: '',
     url: '/theme/colors',
     icon: 'icon-drop'
   },
   {
-    name: 'Typography',
+    name: '',
     url: '/theme/typography',
     icon: 'icon-pencil'
   },
   {
     title: true,
-    name: 'Components'
+    name: ''
   },
-  {
+  /* {
     name: 'Base',
     url: '/base',
-    icon: 'icon-puzzle',
+    icon: '',
     children: [
       {
         name: 'Cards',
@@ -202,7 +202,7 @@ export const navItems: NavData[] = [
         icon: 'icon-bell'
       }
     ]
-  },
+  }, */
   {
     name: 'Widgets',
     url: '/widgets',
@@ -215,7 +215,7 @@ export const navItems: NavData[] = [
   {
     divider: true
   },
-  {
+  /* {
     title: true,
     name: 'Extras',
   },
@@ -255,7 +255,7 @@ export const navItems: NavData[] = [
       text: 'NEW'
     },
     attributes: { disabled: true },
-  },
+  }, */
   /* {
     name: 'Download CoreUI',
     url: 'http://coreui.io/angular/',
