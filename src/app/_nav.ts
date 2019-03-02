@@ -57,6 +57,14 @@ export const navItems: NavData[] = [
     title: true,
     name: ''
   },
+<<<<<<< HEAD
+=======
+  {
+    name: 'Forms',
+    url: '/forms',
+    icon: 'icon-puzzle'
+  },
+>>>>>>> 7a8f29ab384b3aa94235d40f215c70bce817d8c4
    {
     name: 'Base',
     url: 'base',
@@ -67,6 +75,7 @@ export const navItems: NavData[] = [
         url: '/base/cards',
         icon: 'icon-puzzle'
       },
+     
       {
         name: 'Carousels',
         url: '/base/carousels',
@@ -77,11 +86,7 @@ export const navItems: NavData[] = [
         url: '/base/collapses',
         icon: 'icon-puzzle'
       },
-      {
-        name: 'Forms',
-        url: '/base/forms',
-        icon: 'icon-puzzle'
-      },
+    
       {
         name: 'Pagination',
         url: '/base/paginations',
@@ -202,7 +207,11 @@ export const navItems: NavData[] = [
         icon: 'icon-bell'
       }
     ]
+<<<<<<< HEAD
   },
+=======
+  }, 
+>>>>>>> 7a8f29ab384b3aa94235d40f215c70bce817d8c4
   {
     name: 'Widgets',
     url: '/widgets',
