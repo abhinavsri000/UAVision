@@ -207,11 +207,7 @@ export const navItems: NavData[] = [
         icon: 'icon-bell'
       }
     ]
-<<<<<<< HEAD
   },
-=======
-  }, 
->>>>>>> 7a8f29ab384b3aa94235d40f215c70bce817d8c4
   {
     name: 'Widgets',
     url: '/widgets',
