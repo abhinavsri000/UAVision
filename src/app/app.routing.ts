@@ -31,10 +31,6 @@ export const routes: Routes = [
       title: 'Page 500'
     }
   },
-   {
-        path: 'forms',
-        component: FormsComponent
-      },
   /* {
     path: 'login',
     component: LoginComponent,
@@ -57,10 +53,9 @@ export const routes: Routes = [
     },
     children: [
       {
-        path: 'base',
-        loadChildren: './views/base/base.module#BaseModule'
+        path: 'user-profile',
+        loadChildren: './views/user-profile/user-profile.module.ts#UserProfileModule'
       },
-
       {
         path: 'buttons',
         loadChildren: './views/buttons/buttons.module#ButtonsModule'
@@ -72,6 +67,10 @@ export const routes: Routes = [
       {
         path: 'dashboard',
         loadChildren: './views/dashboard/dashboard.module#DashboardModule'
+      },
+      {
+        path: 'form',
+        loadChildren: './views/dashboard/dashboard.module#FormModule'
       },
       {
         path: 'icons',
