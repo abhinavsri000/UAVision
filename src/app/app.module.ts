@@ -39,6 +39,7 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { ChartsModule } from 'ng2-charts/ng2-charts';
 import { UserProfileComponent } from './views/user-profile/user-profile.component';
+import { SetupComponent } from './setup/setup.component';
 
 @NgModule({
   imports: [
@@ -64,6 +65,7 @@ import { UserProfileComponent } from './views/user-profile/user-profile.componen
     RegisterComponent,
     UserProfileComponent,
     ],
+
   providers: [{
     provide: LocationStrategy,
     useClass: HashLocationStrategy
