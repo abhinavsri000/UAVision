@@ -32,7 +32,7 @@ export interface NavData {
 export const navItems: NavData[] = [
   {
     name: 'UAVision',
-    url: '/home/dashboard',
+    url: '/dashboard',
     icon: 'icon-cursor',
     /* badge: {
       variant: 'info',
@@ -44,12 +44,12 @@ export const navItems: NavData[] = [
     name: 'Dashboard'
   },
   {
-    name: '',
-    url: 'dashboard/theme/colors',
+    name: 'Current Project',
+    url: '/dashboard',
     icon: 'icon-drop'
   },
   {
-    name: '',
+    name: 'Add a New Project',
     url: '/theme/typography',
     icon: 'icon-pencil'
   },
