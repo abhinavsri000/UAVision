@@ -31,7 +31,7 @@ export const routes: Routes = [
       title: 'Page 500'
     }
   },
-  /* {
+ {
     path: 'login',
     component: LoginComponent,
     data: {
@@ -44,7 +44,7 @@ export const routes: Routes = [
     data: {
       title: 'Register Page'
     }
-  }, */
+  },
   {
     path: '',
     component: DefaultLayoutComponent,
@@ -54,7 +54,7 @@ export const routes: Routes = [
     children: [
       {
         path: 'user-profile',
-        loadChildren: './views/user-profile/user-profile.module.ts#UserProfileModule'
+        loadChildren: './views/user-pr/user-pr.module#UserPrModule'
       },
       {
         path: 'buttons',

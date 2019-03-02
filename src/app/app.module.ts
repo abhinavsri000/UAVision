@@ -65,7 +65,6 @@ import { SetupComponent } from './setup/setup.component';
     RegisterComponent,
     UserProfileComponent,
     ],
-
   providers: [{
     provide: LocationStrategy,
     useClass: HashLocationStrategy

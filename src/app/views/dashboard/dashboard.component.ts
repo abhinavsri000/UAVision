@@ -13,7 +13,7 @@ export class DashboardComponent implements OnInit {
   // lineChart1
   public lineChart1Data: Array<any> = [
     {
-      data: [65, 59, 84, 84, 51, 55, 40],
+      data: [50, 60, 65, 70, 80, 85, 86],
       label: 'Series A'
     }
   ];
@@ -71,7 +71,7 @@ export class DashboardComponent implements OnInit {
   // lineChart2
   public lineChart2Data: Array<any> = [
     {
-      data: [1, 18, 9, 17, 34, 22, 11],
+      data: [1, 3, 5, 10, 25, 30, 35],
       label: 'Series A'
     }
   ];
@@ -131,7 +131,7 @@ export class DashboardComponent implements OnInit {
   // lineChart3
   public lineChart3Data: Array<any> = [
     {
-      data: [78, 81, 80, 45, 34, 12, 40],
+      data: [50, 55, 60, 65, 66, 70, 80],
       label: 'Series A'
     }
   ];

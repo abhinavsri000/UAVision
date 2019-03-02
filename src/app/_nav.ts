@@ -117,11 +117,11 @@ export const navItems: NavData[] = [
     ]
   }, */
   {
-     name: 'User-profile',
+     name: 'Drone-Calibration',
      url: '/user-profile',
      icon: 'icon-cursor',
   },
-  {
+  /* {
     name: 'Buttons',
     url: '/buttons',
     icon: 'icon-cursor',
@@ -142,13 +142,13 @@ export const navItems: NavData[] = [
         icon: 'icon-cursor'
       }
     ]
-  },
+  }, */
   {
     name: 'Charts',
     url: '/charts',
     icon: 'icon-pie-chart'
   },
-  {
+ /*  {
     name: 'Icons',
     url: '/icons',
     icon: 'icon-star',
@@ -182,7 +182,7 @@ export const navItems: NavData[] = [
         icon: 'icon-star'
       }
     ]
-  },
+  }, */
   {
     name: 'Notifications',
     url: '/notifications',
@@ -205,7 +205,7 @@ export const navItems: NavData[] = [
       }
     ]
   },
-  {
+  /* {
     name: 'Widgets',
     url: '/widgets',
     icon: 'icon-calculator',
@@ -213,16 +213,13 @@ export const navItems: NavData[] = [
       variant: 'info',
       text: 'NEW'
     }
-  },
+  }, */
   {
     divider: true
   },
-  /* {
-    title: true,
-    name: 'Extras',
-  },
+
   {
-    name: 'Pages',
+    name: 'Account',
     url: '/pages',
     icon: 'icon-star',
     children: [
@@ -236,7 +233,7 @@ export const navItems: NavData[] = [
         url: '/register',
         icon: 'icon-star'
       },
-      {
+    /*   {
         name: 'Error 404',
         url: '/404',
         icon: 'icon-star'
@@ -245,10 +242,10 @@ export const navItems: NavData[] = [
         name: 'Error 500',
         url: '/500',
         icon: 'icon-star'
-      }
+      } */
     ]
   },
-  {
+ /*  {
     name: 'Disabled',
     url: '/dashboard',
     icon: 'icon-ban',
