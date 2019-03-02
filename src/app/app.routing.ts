@@ -8,11 +8,13 @@ import { P404Component } from './views/error/404.component';
 import { P500Component } from './views/error/500.component';
 import { LoginComponent } from './views/login/login.component';
 import { RegisterComponent } from './views/register/register.component';
+import { from } from 'rxjs';
+import { FormsComponent } from './views/base/forms.component';
 
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'login',
+    redirectTo: 'dashboard',
     pathMatch: 'full',
   },
   {
@@ -29,7 +31,11 @@ export const routes: Routes = [
       title: 'Page 500'
     }
   },
-  {
+   {
+        path: 'forms',
+        component: FormsComponent
+      },
+  /* {
     path: 'login',
     component: LoginComponent,
     data: {
@@ -42,9 +48,9 @@ export const routes: Routes = [
     data: {
       title: 'Register Page'
     }
-  },
+  }, */
   {
-    path: 'home',
+    path: '',
     component: DefaultLayoutComponent,
     data: {
       title: 'Home'
@@ -54,6 +60,7 @@ export const routes: Routes = [
         path: 'base',
         loadChildren: './views/base/base.module#BaseModule'
       },
+     
       {
         path: 'buttons',
         loadChildren: './views/buttons/buttons.module#ButtonsModule'
