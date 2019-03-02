@@ -3,91 +3,102 @@
     <div class="col-sm-6">
       <div class="card">
         <div class="card-header">
-          <strong>Credit Card</strong>
-          <small>Form</small>
+          <strong>New Project</strong>
+          <small>Details</small>
         </div>
         <div class="card-body">
           <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-6">
               <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                <label for="name">Company Name</label>
+                <input type="text" class="form-control" id="name" placeholder="">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label for="name">Username</label>
+                <input type="text" class="form-control" id="name" placeholder="">
               </div>
             </div>
           </div><!--/.row-->
           <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-6">
               <div class="form-group">
-                <label for="ccnumber">Credit Card Number</label>
-                <input type="text" class="form-control" id="ccnumber" placeholder="0000 0000 0000 0000">
+                <label for="ccnumber">Project Head Name</label>
+                <input type="text" class="form-control" id="ccnumber" placeholder="">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label for="ccnumber">Project Name</label>
+                <input type="text" class="form-control" id="ccnumber" placeholder="">
               </div>
             </div>
           </div><!--/.row-->
           <div class="row">
-            <div class="form-group col-sm-4">
-              <label for="ccmonth">Month</label>
+            <div class="form-group col-sm-6">
+              <label for="ccmonth">Type of Construction</label>
               <select class="form-control" id="ccmonth">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-                <option>10</option>
-                <option>11</option>
-                <option>12</option>
+                <option>Road</option>
+                <option>Bridge</option>
+                <option>Building</option>
+                <option>Stadium</option>
+                
               </select>
             </div>
-            <div class="form-group col-sm-4">
-              <label for="ccyear">Year</label>
+            <div class="form-group col-sm-6">
+              <label for="ccyear">Estimated budget</label>
               <select class="form-control" id="ccyear">
-                <option>2014</option>
-                <option>2015</option>
-                <option>2016</option>
-                <option>2017</option>
-                <option>2018</option>
-                <option>2019</option>
-                <option>2020</option>
-                <option>2021</option>
-                <option>2022</option>
-                <option>2023</option>
-                <option>2024</option>
-                <option>2025</option>
+                <option>100-150Cr</option>
+                <option>150-200Cr</option>
+                <option>200-250Cr</option>
+                <option>250-300Cr</option>
+                <option>300-350Cr</option>
+                
               </select>
             </div>
-            <div class="col-sm-4">
+            <div class="row">
+              <div class="form-group col-sm-6">                
+                  <label for="ccnumber">Initial Allocated Budget</label>
+                  <input type="text" class="form-control" id="ccnumber" placeholder=""> 
+              </div>
+              <div class="form-group col-sm-6">                
+                  <label for="ccnumber">Expected Duration</label>
+                  <input type="text" class="form-control" id="ccnumber" placeholder="">
+              </div>
+            </div>
+            <!-- <div class="col-sm-4">
               <div class="form-group">
                 <label for="cvv">CVV/CVC</label>
                 <input type="text" class="form-control" id="cvv" placeholder="123">
               </div>
-            </div>
-          </div><!--/.row-->
+            </div> -->
+          </div>
         </div>
       </div>
-    </div><!--/.col-->
+    </div>
     <div class="col-sm-6">
       <div class="card">
         <div class="card-header">
-          <strong>Company</strong>
-          <small>Form</small>
+          <strong>Add Activity</strong>
+          
         </div>
         <div class="card-body">
           <div class="form-group">
-            <label for="company">Company</label>
-            <input type="text" class="form-control" id="company" placeholder="Enter your company name">
-          </div>
-          <div class="form-group">
-            <label for="vat">VAT</label>
-            <input type="text" class="form-control" id="vat" placeholder="PL1234567890">
-          </div>
-          <div class="form-group">
-            <label for="street">Street</label>
-            <input type="text" class="form-control" id="street" placeholder="Enter street name">
+            <label for="company">Activity Name</label>
+            <input type="text" class="form-control" id="company" placeholder="">
           </div>
           <div class="row">
+            <div class="form-group col-sm-6">
+              <label for="vat">Duration</label>
+              <input type="text" class="form-control" id="vat" placeholder="">
+            </div>
+            <div class="form-group col-sm-6">
+              <label for="street">Budget</label>
+              <input type="text" class="form-control" id="street" placeholder="">
+            </div>
+          </div>
+         <!--  <div class="row">
             <div class="form-group col-sm-8">
               <label for="city">City</label>
               <input type="text" class="form-control" id="city" placeholder="Enter your city">
@@ -96,16 +107,16 @@
               <label for="postal-code">Postal Code</label>
               <input type="text" class="form-control" id="postal-code" placeholder="Postal Code">
             </div>
-          </div><!--/.row-->
-          <div class="form-group">
+          </div> --><!--/.row-->
+          <!-- <div class="form-group">
             <label for="country">Country</label>
             <input type="text" class="form-control" id="country" placeholder="Country name">
-          </div>
-        </div>
+          </div> -->
+       <!--  </div>
       </div>
-    </div><!--/.col-->
-  </div><!--/.row-->
-  <div class="row">
+    </div> -->
+  </div>
+  <!-- <div class="row">
     <div class="col-md-6">
       <div class="card">
         <div class="card-header">
@@ -488,8 +499,8 @@
           <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
         </div>
       </div>
-    </div><!--/.col-->
-  </div><!--/.row-->
+    </div>
+  </div>
   <div class="row">
     <div class="col-sm-6">
       <div class="card">
@@ -515,7 +526,7 @@
           </div>
         </form>
       </div>
-    </div><!--/.col-->
+    </div>
     <div class="col-sm-6">
       <div class="card">
         <div class="card-header">
@@ -543,7 +554,7 @@
           </form>
         </div>
       </div>
-    </div><!--/.col-->
+    </div>
   </div>
   <div class="row">
     <div class="col-sm-4">
@@ -981,7 +992,7 @@
       </div>
     </div>
   </div>
-  <!--/.row-->
+  
   <div class="row">
     <div class="col-lg-12">
       <div class="card">
@@ -1066,6 +1077,7 @@
         </form>
         </div>
       </div>
-    </div> <!--/.col-->
-  </div><!--/.row-->
+    </div>
+  </div>-->
 </div>
+ 
