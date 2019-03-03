@@ -11,9 +11,9 @@ export class DashboardComponent implements OnInit {
   radioModel: String = 'Month';
   location: String = 'Lucknow';
   add_detail: String = 'project_101_02';
-  comp_status: String = '40%';
+  comp_status: String = '28.1765%';
   placeholder1: String = 'Project Completion';
-  expenses: String = '65,123,234 Rs.';
+  expenses: String = 'Rs. 65,123,234';
   placeholder2: String = 'Total Expenses';
   next_Activity: String = 'Activity13';
   placeholder3: String = 'Next Activity';
@@ -404,6 +404,6 @@ export class DashboardComponent implements OnInit {
 
   // Pie
   public pieChartLabels: string[] = ['Remaining', 'Completed', 'Ongoing'];
-  public pieChartData: number[] = [300, 500, 100];
+  public pieChartData: number[] = [71.8235, 28.1765, 0];
   public pieChartType = 'pie';
 }
