@@ -31,7 +31,7 @@ export interface NavData {
 
 export const navItems: NavData[] = [
   {
-    name: 'UAVision',
+    name: 'Dashboard',
     url: '/dashboard',
     icon: 'icon-cursor',
     /* badge: {
@@ -39,10 +39,7 @@ export const navItems: NavData[] = [
       text: 'NEW'
     } */
   },
-  {
-    title: true,
-    name: 'Dashboard'
-  },
+
   {
     name: 'Current Project',
     url: '/dashboard',
@@ -53,10 +50,7 @@ export const navItems: NavData[] = [
     url: '/theme/typography',
     icon: 'icon-pencil'
   },
-  {
-    title: true,
-    name: ''
-  },
+
   /* {
     name: 'Details',
     url: '/base',
@@ -193,7 +187,7 @@ export const navItems: NavData[] = [
         url: '/notifications/alerts',
         icon: 'icon-bell'
       },
-      {
+    /*   {
         name: 'Badges',
         url: '/notifications/badges',
         icon: 'icon-bell'
@@ -202,7 +196,7 @@ export const navItems: NavData[] = [
         name: 'Modals',
         url: '/notifications/modals',
         icon: 'icon-bell'
-      }
+      } */
     ]
   },
   /* {

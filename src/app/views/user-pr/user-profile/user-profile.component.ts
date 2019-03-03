@@ -8,7 +8,8 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 export class UserProfileComponent implements OnInit {
 
   constructor() { }
-  @ViewChild('gmap') gmapElement: any;
+  ngOnInit(){}
+/*   @ViewChild('gmap') gmapElement: any;
   map: google.maps.Map;
 
   ngOnInit() {
@@ -21,5 +22,5 @@ export class UserProfileComponent implements OnInit {
   }
   setMapType(mapTypeId: string) {
     this.map.setMapTypeId(mapTypeId)
-}
+} */
 }
