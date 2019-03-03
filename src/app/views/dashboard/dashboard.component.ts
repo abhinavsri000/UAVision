@@ -9,7 +9,7 @@ import { CustomTooltips } from '@coreui/coreui-plugin-chartjs-custom-tooltips';
 export class DashboardComponent implements OnInit {
 
   radioModel: String = 'Month';
-  location: String = 'Mumbai';
+  location: String = 'Lucknow';
   add_detail: String = 'project_101_02';
   comp_status: String = '40%';
   placeholder1: String = 'Project Completion';
