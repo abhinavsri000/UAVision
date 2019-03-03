@@ -8,8 +8,15 @@ import { CustomTooltips } from '@coreui/coreui-plugin-chartjs-custom-tooltips';
 })
 export class DashboardComponent implements OnInit {
 
-  radioModel: string = 'Month';
-
+  radioModel: String = 'Month';
+  location: String = 'Mumbai';
+  add_detail: String = 'project_101_02';
+  comp_status: String = '40%';
+  placeholder1: String = 'Project Completion';
+  expenses: String = '65,123,234 Rs.';
+  placeholder2: String = 'Total Expenses';
+  next_Activity: String = 'Activity13';
+  placeholder3: String = 'Next Activity';
   // lineChart1
   public lineChart1Data: Array<any> = [
     {
@@ -166,8 +173,8 @@ export class DashboardComponent implements OnInit {
   };
   public lineChart3Colours: Array<any> = [
     {
-      backgroundColor: 'rgba(255,255,255,.2)',
-      borderColor: 'rgba(255,255,255,.55)',
+      backgroundColor: 'rgba(164,224,208,.9)',
+      borderColor: 'rgba(95,158,160,.55)',
     }
   ];
   public lineChart3Legend = false;
@@ -203,7 +210,7 @@ export class DashboardComponent implements OnInit {
   };
   public barChart1Colours: Array<any> = [
     {
-      backgroundColor: 'rgba(255,255,255,.3)',
+      backgroundColor: 'rgba(95,158,160,.9)',
       borderWidth: 0
     }
   ];

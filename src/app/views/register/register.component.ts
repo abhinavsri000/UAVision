@@ -5,7 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: 'register.component.html'
 })
 export class RegisterComponent {
-
-  constructor() { }
+  constructor() {}
 
 }

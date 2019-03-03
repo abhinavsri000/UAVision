@@ -38,7 +38,6 @@ import { AppRoutingModule } from './app.routing';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { ChartsModule } from 'ng2-charts/ng2-charts';
-import { UserProfileComponent } from './views/user-profile/user-profile.component';
 import { SetupComponent } from './setup/setup.component';
 
 @NgModule({
@@ -63,7 +62,6 @@ import { SetupComponent } from './setup/setup.component';
     P500Component,
     LoginComponent,
     RegisterComponent,
-    UserProfileComponent,
     ],
   providers: [{
     provide: LocationStrategy,

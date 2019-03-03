@@ -1,13 +1,13 @@
 <div class="animated fadeIn bg-light">
   <div class="row">
     <div class="col-sm-6 col-lg-3">
-      <div class="card text-dark bg-light" style=" box-shadow: 1px 1px 5px 1px rgb(180, 180, 180);color: white;">
+      <div class="card" style="border:1px solid rgb(31, 158, 180); box-shadow: 1px 1px 5px 1px rgb(180, 180, 180);color: black;">
         <div class="card-body pb-0">
           <button type="button" class="btn btn-transparent p-0 float-right">
             <i class="icon-location-pin"></i>
           </button>
-          <div class="text-value">Mumbai</div>
-          <div>Pr_123_Highway</div>
+          <div class="text-value">{{location}}</div>
+          <div>{{add_detail}}</div>
         </div>
         <div class="chart-wrapper mt-3 mx-3" style="height:70px;">
           <canvas baseChart class="chart"
@@ -21,21 +21,21 @@
       </div>
     </div><!--/.col-->
     <div class="col-sm-6 col-lg-3">
-      <div class="card text-white bg-primary" style=" box-shadow: 1px 1px 5px 1px rgb(180, 180, 180)">
+      <div class="card" style="border:1px solid rgb(31, 158, 180); box-shadow: 1px 1px 5px 1px rgb(180, 180, 180);color: black;">
         <div class="card-body pb-0">
           <div class="btn-group float-right" dropdown>
             <button type="button" class="btn btn-transparent dropdown-toggle p-0" dropdownToggle>
               <i class="icon-settings"></i>
             </button>
-            <div class="dropdown-menu dropdown-menu-right" *dropdownMenu>
+            <!-- <div class="dropdown-menu dropdown-menu-right" *dropdownMenu>
               <a class="dropdown-item" href="#">Action</a>
               <a class="dropdown-item" href="#">Another action</a>
               <a class="dropdown-item" href="#">Something else here</a>
               <a class="dropdown-item" href="#">Something else here</a>
-            </div>
+            </div> -->
           </div>
-          <div class="text-value">40%</div>
-          <div>Project Status</div>
+          <div class="text-value">{{comp_status}}</div>
+          <div>{{placeholder1}}</div>
         </div>
         <div class="chart-wrapper mt-3 mx-3" style="height:70px;">
           <canvas baseChart class="chart"
@@ -49,20 +49,20 @@
       </div>
     </div><!--/.col-->
     <div class="col-sm-6 col-lg-3">
-      <div class="card text-white bg-warning" style=" box-shadow: 1px 1px 5px 1px rgb(180, 180, 180)">
+      <div class="card" style=" border:1px solid rgb(31, 158, 180);box-shadow: 1px 1px 5px 1px rgb(224, 224, 224);color: black;">
         <div class="card-body pb-0">
           <div class="btn-group float-right" dropdown>
             <button type="button" class="btn btn-transparent dropdown-toggle p-0" dropdownToggle>
               <i class="icon-settings"></i>
-            </button>
+            </button><!--
             <div class="dropdown-menu dropdown-menu-right" *dropdownMenu>
               <a class="dropdown-item" href="#">Action</a>
               <a class="dropdown-item" href="#">Another action</a>
               <a class="dropdown-item" href="#">Something else here</a>
-            </div>
+            </div> -->
           </div>
-          <div class="text-value">₹65,123,234</div>
-          <div>Total Expenses</div>
+          <div class="text-value">{{expenses}}</div>
+          <div>{{placeholder2}}</div>
         </div>
         <div class="chart-wrapper mt-3" style="height:70px;">
           <canvas baseChart class="chart"
@@ -76,20 +76,20 @@
       </div>
     </div><!--/.col-->
     <div class="col-sm-6 col-lg-3">
-      <div class="card text-white bg-danger" style=" box-shadow: 1px 1px 5px 1px rgb(180, 180, 180)">
+      <div class="card" style="border:1px solid rgb(31, 158, 180); box-shadow: 1px 1px 5px 1px rgb(180, 180, 180);color: black;">
         <div class="card-body pb-0">
           <div class="btn-group float-right" dropdown>
             <button type="button" class="btn btn-transparent dropdown-toggle p-0" dropdownToggle>
               <i class="icon-settings"></i>
-            </button>
+            </button><!--
             <div class="dropdown-menu dropdown-menu-right" *dropdownMenu>
               <a class="dropdown-item" href="#">Action</a>
               <a class="dropdown-item" href="#">Another action</a>
               <a class="dropdown-item" href="#">Something else here</a>
-            </div>
+            </div> -->
           </div>
-          <div class="text-value">Activty_13</div>
-          <div>Next</div>
+          <div class="text-value">{{next_Activity}}</div>
+          <div>{{placeholder3}}</div>
         </div>
         <div class="chart-wrapper mt-3 mx-3" style="height:70px;">
           <canvas baseChart class="chart"
@@ -1490,5 +1490,5 @@
         </div>
       </div>
     </div> --><!--/.col-->
-  <!-- </div> --><!--/.row--> -->
+  <!-- </div> --><!--/.row-->
 </div>

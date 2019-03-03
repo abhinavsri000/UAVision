@@ -69,10 +69,6 @@ export const routes: Routes = [
         loadChildren: './views/dashboard/dashboard.module#DashboardModule'
       },
       {
-        path: 'form',
-        loadChildren: './views/dashboard/dashboard.module#FormModule'
-      },
-      {
         path: 'icons',
         loadChildren: './views/icons/icons.module#IconsModule'
       },
