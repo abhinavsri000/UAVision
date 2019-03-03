@@ -29,7 +29,7 @@
                   </div>
                   <input type="text" class="form-control" name="org_name" placeholder="Organisation Name"[(ngModel)]="model.org_name" #org_name="ngModel" required />
                   <div *ngIf="f.submitted && !org_name.valid" class="help-block">oragnisation name is required</div>
-               
+
                 </div>
                 <div class="input-group mb-3">
                   <div class="input-group-prepend">
@@ -37,7 +37,7 @@
                   </div>
                   <input type="password" class="form-control" name="pswd" placeholder="Password"[(ngModel)]="model.pswd" #pswd="ngModel" required />
                   <div *ngIf="f.submitted && !pswd.valid" class="help-block">Password is required</div>
-               
+
                 </div>
                 <div class="input-group mb-4">
                   <div class="input-group-prepend">
@@ -45,7 +45,7 @@
                   </div>
                   <input type="password" class="form-control" name="cnf_pswd" placeholder="Confirm your Password" [(ngModel)]="model.cnf_pswd" #model.cnf_pswd="ngModel" required />
                   <div *ngIf="f.submitted && !username.valid" class="help-block">Username is required</div>
-               
+
                 </div>
                 <button type="button" class="btn btn-block btn-success">Create Account</button>
               </form>
