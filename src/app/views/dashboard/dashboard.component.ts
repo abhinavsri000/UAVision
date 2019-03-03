@@ -386,4 +386,17 @@ export class DashboardComponent implements OnInit {
       this.mainChartData3.push(65);
     }
   }
+  // Radar
+  public radarChartLabels: string[] = ['Time', 'Inventory', 'Completion', 'Structure', 'Expenditue'];
+
+  public radarChartData: any = [
+    {data: [65, 59, 90, 81, 55], label: 'Current Work Cycle'},
+    {data: [28, 48, 40, 19, 27], label: 'Previous Work Cycle'}
+  ];
+  public radarChartType = 'radar';
+
+  // Pie
+  public pieChartLabels: string[] = ['Remaining', 'Completed', 'Ongoing'];
+  public pieChartData: number[] = [300, 500, 100];
+  public pieChartType = 'pie';
 }

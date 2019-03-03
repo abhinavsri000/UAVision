@@ -65,16 +65,16 @@ export class ChartJSComponent {
   public doughnutChartType = 'doughnut';
 
   // Radar
-  public radarChartLabels: string[] = ['Eating', 'Drinking', 'Sleeping', 'Designing', 'Coding', 'Cycling', 'Running'];
+  public radarChartLabels: string[] = ['Time', 'Inventory', 'Completion', 'Structure', 'Expenditue'];
 
   public radarChartData: any = [
-    {data: [65, 59, 90, 81, 56, 55, 40], label: 'Series A'},
-    {data: [28, 48, 40, 19, 96, 27, 100], label: 'Series B'}
+    {data: [65, 59, 90, 81, 55], label: 'Current Work Cycle'},
+    {data: [28, 48, 40, 19, 27], label: 'Previous Work Cycle'}
   ];
   public radarChartType = 'radar';
 
   // Pie
-  public pieChartLabels: string[] = ['Download Sales', 'In-Store Sales', 'Mail Sales'];
+  public pieChartLabels: string[] = ['Remaining', 'Completed', 'Ongoing'];
   public pieChartData: number[] = [300, 500, 100];
   public pieChartType = 'pie';
 
