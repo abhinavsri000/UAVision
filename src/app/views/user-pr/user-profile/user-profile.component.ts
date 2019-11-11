@@ -1,5 +1,4 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { } from '@types/googlemaps';
 
 @Component({
   selector: 'app-user-profile',
@@ -9,19 +8,19 @@ import { } from '@types/googlemaps';
 export class UserProfileComponent implements OnInit {
 
   constructor() { }
-  
+/*
   @ViewChild('gmap') gmapElement: any;
-  map: google.maps.Map;
+  map: google.maps.Map; */
 
   ngOnInit() {
-    let mapProp = {
+   /*  let mapProp = {
       center: new google.maps.LatLng(20.5937, 78.9629),
       zoom: 5,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     };
-    this.map = new google.maps.Map(this.gmapElement.nativeElement, mapProp);
+    this.map = new google.maps.Map(this.gmapElement.nativeElement, mapProp); */
   }
-  setMapType(mapTypeId: string) {
+ /*  setMapType(mapTypeId: string) {
     this.map.setMapTypeId(mapTypeId)
-}
+} */
 }
