@@ -1,0 +1,245 @@
+<div class="animated fadeIn bg-light">
+  <div class="row">
+    <div class="col-sm-6 col-lg-3">
+      <div class="card" style="border:1px solid rgb(31, 158, 180); box-shadow: 1px 1px 5px 1px rgb(180, 180, 180);color: black;">
+        <div class="card-body pb-0">
+          <button type="button" class="btn btn-transparent p-0 float-right">
+            <i class="icon-location-pin"></i>
+          </button>
+          <div class="text-value">{{location}}</div>
+          <div>{{add_detail}}</div>
+        </div>
+        <div class="chart-wrapper mt-3 mx-3" style="height:70px;">
+          <canvas baseChart class="chart"
+          [datasets]="lineChart2Data"
+          [labels]="lineChart2Labels"
+          [options]="lineChart2Options"
+          [colors]="lineChart2Colours"
+          [legend]="lineChart2Legend"
+          [chartType]="lineChart2Type"></canvas>
+        </div>
+      </div>
+    </div><!--/.col-->
+    <div class="col-sm-6 col-lg-3">
+      <div class="card" style="border:1px solid rgb(31, 158, 180); box-shadow: 1px 1px 5px 1px rgb(180, 180, 180);color: black;">
+        <div class="card-body pb-0">
+          <div class="btn-group float-right" dropdown>
+            <button type="button" class="btn btn-transparent dropdown-toggle p-0" dropdownToggle>
+              <i class="icon-settings"></i>
+            </button>
+            
+          </div>
+          <div class="text-value">{{comp_status}}</div>
+          <div>{{placeholder1}}</div>
+        </div>
+        <div class="chart-wrapper mt-3 mx-3" style="height:70px;">
+          <canvas baseChart class="chart"
+                  [datasets]="lineChart1Data"
+                  [labels]="lineChart1Labels"
+                  [options]="lineChart1Options"
+                  [colors]="lineChart1Colours"
+                  [legend]="lineChart1Legend"
+                  [chartType]="lineChart1Type"></canvas>
+        </div>
+      </div>
+    </div><!--/.col-->
+    <div class="col-sm-6 col-lg-3">
+      <div class="card" style=" border:1px solid rgb(31, 158, 180);box-shadow: 1px 1px 5px 1px rgb(224, 224, 224);color: black;">
+        <div class="card-body pb-0">
+          <div class="btn-group float-right" dropdown>
+            <button type="button" class="btn btn-transparent dropdown-toggle p-0" dropdownToggle>
+              <i class="icon-settings"></i>
+            </button>
+          </div>
+          <div class="text-value">{{expenses}}</div>
+          <div>{{placeholder2}}</div>
+        </div>
+        <div class="chart-wrapper mt-3" style="height:70px;">
+          <canvas baseChart class="chart"
+          [datasets]="lineChart3Data"
+          [labels]="lineChart3Labels"
+          [options]="lineChart3Options"
+          [colors]="lineChart3Colours"
+          [legend]="lineChart3Legend"
+          [chartType]="lineChart3Type"></canvas>
+        </div>
+      </div>
+    </div><!--/.col-->
+    <div class="col-sm-6 col-lg-3">
+      <div class="card" style="border:1px solid rgb(31, 158, 180); box-shadow: 1px 1px 5px 1px rgb(180, 180, 180);color: black;">
+        <div class="card-body pb-0">
+          <div class="btn-group float-right" dropdown>
+            <button type="button" class="btn btn-transparent dropdown-toggle p-0" dropdownToggle>
+              <i class="icon-settings"></i>
+            </button>
+          </div>
+          <div class="text-value">{{next_Activity}}</div>
+          <div>{{placeholder3}}</div>
+        </div>
+        <div class="chart-wrapper mt-3 mx-3" style="height:70px;">
+          <canvas baseChart class="chart"
+          [datasets]="barChart1Data"
+          [labels]="barChart1Labels"
+          [options]="barChart1Options"
+          [colors]="barChart1Colours"
+          [legend]="barChart1Legend"
+          [chartType]="barChart1Type"></canvas>
+        </div>
+      </div>
+    </div><!--/.col-->
+  </div><!--/.row-->
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+          <div class="card-header">
+            Radar Chart
+            <div class="card-header-actions">
+              <a href="http://www.chartjs.org">
+                <small class="text-muted">docs</small>
+              </a>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="chart-wrapper">
+              <canvas baseChart class="chart"
+              [datasets]="radarChartData"
+              [labels]="radarChartLabels"
+              [chartType]="radarChartType"
+              (chartHover)="chartHovered($event)"
+              (chartClick)="chartClicked($event)"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-header">
+            Pie Chart
+            <div class="card-header-actions">
+              <a href="http://www.chartjs.org">
+                <small class="text-muted">docs</small>
+              </a>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="chart-wrapper">
+              <canvas baseChart class="chart"
+              [data]="pieChartData"
+              [labels]="pieChartLabels"
+              [chartType]="pieChartType"
+              (chartHover)="chartHovered($event)"
+              (chartClick)="chartClicked($event)"></canvas>
+            </div>
+          </div>
+        </div>
+        </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-sm-6 col-lg-3">
+      <div class="brand-card">
+        <div class="brand-card-header bg-facebook">
+          <i class="fa fa-hourglass-2"></i>
+          <div class="chart-wrapper">
+            <canvas baseChart class="chart"
+            [datasets]="brandBoxChartData1"
+            [labels]="brandBoxChartLabels"
+            [options]="brandBoxChartOptions"
+            [colors]="brandBoxChartColours"
+            [legend]="brandBoxChartLegend"
+            [chartType]="brandBoxChartType"></canvas>
+          </div>
+        </div>
+        <div class="brand-card-body">
+          <div>
+            <div class="text-value">Cement</div>
+            <div class="text-uppercase text-muted small">Material</div>
+          </div>
+          <div>
+            <div class="text-value">30%</div>
+            <div class="text-uppercase text-muted small">Rmaining</div>
+          </div>
+        </div>
+      </div>
+    </div><!--/.col-->
+    <div class="col-sm-6 col-lg-3">
+      <div class="brand-card">
+        <div class="brand-card-header bg-twitter">
+          <i class="fa fa-hourglass-end"></i>
+          <div class="chart-wrapper">
+            <canvas baseChart class="chart"
+            [datasets]="brandBoxChartData2"
+            [labels]="brandBoxChartLabels"
+            [options]="brandBoxChartOptions"
+            [colors]="brandBoxChartColours"
+            [legend]="brandBoxChartLegend"
+            [chartType]="brandBoxChartType"></canvas>
+          </div>
+        </div>
+        <div class="brand-card-body">
+          <div>
+            <div class="text-value">Sand</div>
+            <div class="text-uppercase text-muted small">Material</div>
+          </div>
+          <div>
+            <div class="text-value text-danger">10%</div>
+            <div class="text-uppercase text-muted small">Remaining</div>
+          </div>
+        </div>
+      </div>
+    </div><!--/.col-->
+    <div class="col-sm-6 col-lg-3">
+      <div class="brand-card">
+        <div class="brand-card-header bg-linkedin">
+          <i class="fa fa-hourglass-start"></i>
+          <div class="chart-wrapper">
+            <canvas baseChart class="chart"
+            [datasets]="brandBoxChartData3"
+            [labels]="brandBoxChartLabels"
+            [options]="brandBoxChartOptions"
+            [colors]="brandBoxChartColours"
+            [legend]="brandBoxChartLegend"
+            [chartType]="brandBoxChartType"></canvas>
+          </div>
+        </div>
+        <div class="brand-card-body">
+          <div>
+            <div class="text-value">Clinkers</div>
+            <div class="text-uppercase text-muted small">Material</div>
+          </div>
+          <div>
+            <div class="text-value text-success">80%</div>
+            <div class="text-uppercase text-muted small">Remaining</div>
+          </div>
+        </div>
+      </div>
+    </div><!--/.col-->
+    <div class="col-sm-6 col-lg-3">
+      <div class="brand-card">
+        <div class="brand-card-header bg-google-plus">
+          <i class="fa fa-hourglass-2"></i>
+          <div class="chart-wrapper">
+            <canvas baseChart class="chart"
+            [datasets]="brandBoxChartData4"
+            [labels]="brandBoxChartLabels"
+            [options]="brandBoxChartOptions"
+            [colors]="brandBoxChartColours"
+            [legend]="brandBoxChartLegend"
+            [chartType]="brandBoxChartType"></canvas>
+          </div>
+        </div>
+        <div class="brand-card-body">
+          <div>
+            <div class="text-value">Steel</div>
+            <div class="text-uppercase text-muted small">Material</div>
+          </div>
+          <div>
+            <div class="text-value text-warning">20%</div>
+            <div class="text-uppercase text-muted small">Remaining</div>
+          </div>
+        </div>
+      </div>
+    </div><!--/.col-->
+  </div><!--/.row-->
+  
+</div>

@@ -1,0 +1,109 @@
+<div class="animated fadeIn">
+  
+  <div class="col-sm-12">
+    <div class="card">
+      <div class="card-header">
+        <strong>New Project</strong>
+        <small>Details</small>
+      </div>
+      <div class="card-body">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="">
+                </div>
+            </div>
+          <div class="col-sm-4">
+            <div class="form-group">
+              <label for="name">Username</label>
+              <input type="text" class="form-control" id="uname" placeholder="">
+            </div>
+          </div>
+          <div class="form-group col-sm-4">                
+            <label for="ccnumber">Initial Allocated Budget</label>
+            <input type="text" class="form-control" id="abudget" placeholder=""> 
+          </div>
+        </div><!--/.row-->
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="ccnumber">Project Head Name</label>
+              <input type="text" class="form-control" id="phname" placeholder="">
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="ccnumber">Project Name</label>
+              <input type="text" class="form-control" id="pname" placeholder="">
+            </div>
+          </div>
+        </div><!--/.row-->
+        <div class="row">
+          <div class="form-group col-sm-4">
+            <label for="ccmonth">Type of Construction</label>
+            <select class="form-control" id="construction">
+              <option>Road</option>
+              <option>Bridge</option>
+              <option>Building</option>
+              <option>Stadium</option>
+              
+            </select>
+          </div>
+          <div class="form-group col-sm-4">
+            <label for="ccyear">Estimated budget</label>
+            <select class="form-control" id="ebudget">
+              <option>100-150Cr</option>
+              <option>150-200Cr</option>
+              <option>200-250Cr</option>
+              <option>250-300Cr</option>
+              <option>300-350Cr</option>
+              
+            </select>
+          </div>              
+          <div class="form-group col-sm-4">                
+              <label for="ccnumber">Expected Duration</label>
+              <input type="text" class="form-control" id="eduration" placeholder="">
+          </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="form-group">
+              <label for="name">Total No. of Activities</label>
+              <input type="text" class="form-control" id="activities" placeholder="">
+            </div>
+          </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <input type="file" #fileInput placeholder="Upload file..." />
+            <button type="button" (click)="upload()">Upload</button>
+          </div>
+          <div class="col-sm-6">
+            <button type="submit" class="btn btn-sm btn-success"><i class="fa fa-plus-square"></i> Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-12">
+    <div class="card">
+      <div class="card-header">
+        <strong>Add Activity</strong>
+        
+      </div>
+      <div class="card-body">
+        <div class="form-group">
+          <label for="company">Activity Name</label>
+          <input type="text" class="form-control" id="aname" placeholder="">
+        </div>
+        <div class="row">
+          <div class="form-group col-sm-6">
+            <label for="vat">Duration</label>
+            <input type="text" class="form-control" id="duration" placeholder="">
+          </div>
+          <div class="form-group col-sm-6">
+            <label for="street">Budget</label>
+            <input type="text" class="form-control" id="budget" placeholder="">
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-sm btn-success"><i class="fa fa-plus-square"></i> Add</button>
